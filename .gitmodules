@@ -1,0 +1,7 @@
+[submodule "theme-yilia"]
+      path = themes/yilia
+      url = https://github.com/litten/hexo-theme-yilia.git
+
+[submodule "qingniufly"]
+      path = .deploy/qingniufly.github.io
+      url = https://github.com/qingniufly/qingniufly.github.io.git
