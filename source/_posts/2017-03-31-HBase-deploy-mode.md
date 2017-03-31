@@ -69,7 +69,7 @@ HMaster会占用三个端口（默认是16010， 16020， 16030）
 backup HMaster的端口偏移量在脚本后面作为参数
 最多一个机器上可以启动10个HMaster
 stop backup HMaster
-cat /tmp/hbase-testuser-2-master.pid |xargs kill 
+` cat /tmp/hbase-testuser-2-master.pid |xargs kill `
 
 ### 6. 启动停止额外的HRegionServer
 同backup HMaster类似
