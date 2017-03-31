@@ -1,6 +1,7 @@
+msg=`git log -1 --pretty=oneline|awk '{print $2}'`
 hexo generate
 cp -R public/* .deploy/qingniufly.github.io
 cd .deploy/qingniufly.github.io
-git add .
-git commit -m “更新”
+git commit -am $msg
 git push origin master
+cd ../../
