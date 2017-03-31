@@ -1,4 +1,6 @@
-msg=`git log -1 --pretty=oneline|awk '{print $2}'`
+msg=$1
+echo "git 提交备注为：$msg"
+# msg=`git log -1 --pretty=oneline|awk '{print $2}'`
 hexo generate
 cp -R public/* .deploy/qingniufly.github.io
 cd .deploy/qingniufly.github.io
@@ -6,3 +8,6 @@ git add -A
 git commit -m $msg
 git push origin master
 cd ../../
+git add .
+git commit -m $msg
+
