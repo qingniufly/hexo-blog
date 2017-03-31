@@ -2,6 +2,7 @@ msg=`git log -1 --pretty=oneline|awk '{print $2}'`
 hexo generate
 cp -R public/* .deploy/qingniufly.github.io
 cd .deploy/qingniufly.github.io
-git commit -am $msg
+git add -A
+git commit -m $msg
 git push origin master
 cd ../../
